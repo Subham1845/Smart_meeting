@@ -1,0 +1,120 @@
+.form {
+  display: flex;
+  padding: 1rem;
+  margin: auto;
+  width: 30%;
+  margin-top: 10%;
+
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+  }
+}
+
+.card-info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  line-height: 1.5em;
+  p:before {
+    content: attr(type);
+    display: block;
+    // margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+  }
+  // .react-datepicker-wrapper {
+  //   width: -webkit-fill-available;
+  // }
+  .react-time-picker {
+    width: -webkit-fill-available;
+  }
+}
+
+.card-title {
+  font-size: 25px;
+  line-height: 1.1em;
+  color: #32325d;
+  margin: auto;
+  text-transform: uppercase;
+}
+.card-intro-detail {
+  color: #32325d;
+  margin: auto;
+  text-transform: uppercase;
+}
+button {
+  width: 100%;
+}
+.card-intro {
+  height: 5rem;
+}
+.modal-body {
+  text-align: center;
+}
+.btn {
+  background: linear-gradient(#141e30, #243b55);
+  border-radius: 0.6em;
+  cursor: pointer;
+  //   display: flex;
+  align-self: center;
+  font-size: 1rem;
+  outline: none;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  width: -webkit-fill-available;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  border-color: #141e30;
+  color: aliceblue;
+  //   box-shadow: 0 0 40px 40px #141e30 inset, 0 0 0 0 #141e30;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 #141e30 inset, 0 0 10px 4px #141e30;
+    color: aliceblue;
+    outline: none;
+  }
+}
+.select_building {
+  float: left;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.select_building:hover {
+  background: #78788c;
+  color: #fff;
+}
+.Modal {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  right: 400px;
+  bottom: 100px;
+  background-color: aliceblue;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #141e30;
+}

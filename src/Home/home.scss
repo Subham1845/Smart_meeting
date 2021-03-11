@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+header {
+  color: aliceblue;
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 10vh;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+  padding: 1rem;
+  margin: auto;
+  width: 50%;
+
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      .card-image {
+        opacity: 1;
+      }
+    }
+  }
+  #dropdown {
+    margin-bottom: 15px;
+  }
+  .card-info {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    line-height: 1.5em;
+    p:before {
+      content: attr(type);
+      display: block;
+      // margin: 28px 0 0;
+      font-size: 14px;
+      color: #5a5a5a;
+    }
+  }
+
+  .card-title {
+    font-size: 30px;
+    line-height: 1.1em;
+    color: #32325d;
+    font-weight: 700;
+    margin: auto;
+    text-transform: uppercase;
+  }
+
+  .card-intro {
+    // height: 5rem;
+    border-bottom: 1px solid grey;
+    p::before {
+      color: #243b55;
+    }
+  }
+}
+label {
+  font-weight: 700;
+  border-bottom: 1px solid grey;
+}
+.third {
+  background: linear-gradient(#141e30, #243b55);
+  border-radius: 0.6em;
+  cursor: pointer;
+  //   display: flex;
+  align-self: center;
+  font-size: 1rem;
+  outline: none;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  width: -webkit-fill-available;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  border-color: #141e30;
+  color: aliceblue;
+  //   box-shadow: 0 0 40px 40px #141e30 inset, 0 0 0 0 #141e30;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 #141e30 inset, 0 0 10px 4px #141e30;
+    color: aliceblue;
+    outline: none;
+  }
+}
